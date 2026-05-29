@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Jackson Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact">
+<nav>
+    <a href="index.html" class="nav-logo">J<span>.</span>ACKSON</a>
+    <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <ul>
+        <li><a href="index.html#about" class="mob-link">About</a></li>
+        <li><a href="works.html" class="mob-link">Works</a></li>
+        <li><a href="skills.html" class="mob-link">Skills</a></li>
+        <li><a href="contact.html" class="mob-link active">Contact</a></li>
+    </ul>
+    <div class="mobile-menu-footer">poloboys07@naver.com · 010-2744-8338</div>
+</div>
+
+<div class="contact-layout">
+    <div class="contact-left">
+        <div>
+            <div class="cl-eyebrow">Contact</div>
+            <h1 class="contact-title">같이 만들어요.</h1>
+            <p class="contact-intro">새로운 기회를 찾고 있습니다.<br>채용 문의, 프로젝트 협업, 어떤 이야기든 편하게 연락 주세요.</p>
+        </div>
+        <div>
+            <div class="ci-item">
+                <div class="ci-icon">@</div>
+                <div>
+                    <div class="ci-label">Email</div>
+                    <a href="mailto:poloboys07@naver.com" class="ci-value">poloboys07@naver.com</a>
+                </div>
+            </div>
+            <div class="ci-item">
+                <div class="ci-icon">TEL</div>
+                <div>
+                    <div class="ci-label">Phone</div>
+                    <a href="tel:010-2744-8338" class="ci-value">010-2744-8338</a>
+                </div>
+            </div>
+            <div class="ci-item">
+                <div class="ci-icon">LOC</div>
+                <div>
+                    <div class="ci-label">Location</div>
+                    <span class="ci-value">경기 하남 — 서울·경기 전지역 가능</span>
+                </div>
+            </div>
+            <div class="ci-item">
+                <div class="ci-icon">GH</div>
+                <div>
+                    <div class="ci-label">GitHub</div>
+                    <a href="https://github.com/" target="_blank" class="ci-value">github.com/yourid</a>
+                </div>
+            </div>
+            <div class="avail">
+                <div class="avail-dot"></div>
+                <span class="avail-text">현재 구직 중 — 빠른 응답 가능</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <h2 class="form-title">SEND A MESSAGE</h2>
+        <div class="form-row">
+            <div class="form-group">
+                <label class="form-label" for="name">이름</label>
+                <input type="text" id="name" class="form-input" placeholder="홍길동" autocomplete="name">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="company">회사명</label>
+                <input type="text" id="company" class="form-input" placeholder="(선택)" autocomplete="organization">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="email">이메일</label>
+            <input type="email" id="email" class="form-input" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="subject">제목</label>
+            <input type="text" id="subject" class="form-input" placeholder="채용 문의 / 프로젝트 협업 등">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="message">메시지</label>
+            <textarea id="message" class="form-textarea" placeholder="안녕하세요."></textarea>
+        </div>
+        <button class="btn-submit" id="submitBtn" onclick="handleSubmit()">Send Message →</button>
+        <div class="success-msg" id="success">✓ 전송 완료. 빠르게 답장 드리겠습니다.</div>
+        <p class="form-note">* 실제 연락은 이메일 또는 전화를 이용해 주세요.</p>
+    </div>
+</div>
+
+<footer>
+    <span class="footer-copy">© 2025 Jackson (Park Yoon-su)</span>
+    <div class="footer-links">
+        <a href="index.html">Home</a><a href="works.html">Works</a><a href="skills.html">Skills</a>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
